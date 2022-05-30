@@ -17,3 +17,4 @@ echo "Bye!"
 exit
 else 
 echo "Let's get started!"
+fi
