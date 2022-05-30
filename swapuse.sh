@@ -8,3 +8,12 @@ echo '		 8Gb			4Gb		'
 echo '		>8Gb			2-4Gb	'
 echo '      '
 free -h
+#
+# Ask if wish to continue or quit
+#
+read -rp "Do you wish to continue Y/n: " LETSGO
+if [["$LETSGO" == [Y} ]]]; then
+echo "Bye!"
+exit
+else 
+echo "Let's get started!"
