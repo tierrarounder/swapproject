@@ -12,9 +12,9 @@ free -h
 # Ask if wish to continue or quit
 #
 read -rp "Do you wish to continue Y/n: " LETSGO
-if [["$LETSGO" == [Y] ]]; then
-echo "Bye!"
+if ["$LETSGO" == "Y" ]; then
+echo "Let's get started!"
 quit
 else 
-echo "Let's get started!"
+echo "Bye!"
 fi
