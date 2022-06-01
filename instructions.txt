@@ -1,0 +1,25 @@
+check with swapon
+
+sudo fallocate -l 1G /swapfile
+sudo chmod 600/swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+to make permanent:
+
+sudo nano /etc/fstab
+
+at bottom add these lines if not already there:
+
+#swapfile
+/swapfile	swap	swap	defaults	0	0
+
+verify with cmd:
+free -h
+
+to change an existing swapfile:
+
+sudo swapoff -v /swapfile
+sudo rm /swapfile
+
+then proceed to reallocate swapfile with new size
